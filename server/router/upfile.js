@@ -50,21 +50,23 @@ fileRouter.post('/upfile/add',upload.single('file'),async(ctx,next)=>{
     fs.rename(oldpath,newpath,function(err){
         // 改名失败
         if(err){
-          ctx.body = {
-            code:1,
-            msg:'err',
-            data:{}  
-          }
+            ctx.body = {
+                code:1,
+                msg:'err',
+                data:{}  
+            }
+        }else{
+            ctx.body = {
+                 code:0,
+                 msg:'ok'
+            }
+            // ws 广播消息
+            utils.broadcastSendimg("image", newfilename, fromId)
+
         }
     })
 
-    ctx.body = {
-      code:0,
-      msg:'ok'
-    }
-
-    // ws 广播消息
-    utils.broadcastSendimg("image", newfilename, fromId)
+    
    
   })
 
