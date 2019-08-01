@@ -1,0 +1,7 @@
+/* pages/home/index.wxss */
+button{
+  width:270rpx;
+  height:80rpx;
+  line-height:80rpx;
+  margin-top:100rpx;
+}

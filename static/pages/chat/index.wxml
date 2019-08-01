@@ -1,0 +1,40 @@
+<view>
+<!-- 消息列表 -->
+<view class='msg_list martop40'>
+
+        <block wx:for="{{msg_data}}" wx:key="{{fromId}}">
+          <!-- 返回图片处理 -->
+           <view class="other other_img" wx:if='{{item.fromuser == "other" && item.type=="image"}}' wx:key="{{item.fromId}}" >
+            <text class='msg_text left_icon chat_icon'>222</text>
+           <image class='chat_img left_icon' alt="#" src="{{item.src}}"></image>
+          </view>
+
+           <view class="me me_img" wx:if='{{item.fromuser == "me" && item.type=="image"}}' wx:key="{{item.fromId}}" >
+            <text class='msg_text right_icon chat_icon'>222</text>
+           <image class='chat_img right_icon' alt="#" src="{{item.src}}"></image>
+          </view>
+          <!-- 返回文字处理 -->
+            <view class="other" wx:if='{{item.fromuser == "other" && item.type=="message"}}' wx:key="{{item.fromId}}">
+              <text class='msg_text left_icon'>{{item.message}}</text>
+            </view>
+
+            <view class="me" wx:if='{{item.fromuser == "me" && item.type=="message"}}' wx:key="{{item.fromId}}">
+              <text class='msg_text right_icon'>{{item.message}}</text>
+            </view>
+        </block>
+        
+</view>
+
+<!-- 消息发送 -->
+<view class='send_msg'>
+  <input class='input_box' type='text' bindinput='setstr' value='{{socketMsg}}'></input>
+  <text class='btn_plus marleft10' bindtap='add_photo' size="default">+</text>
+  <button class='btn marleft10' bindtap='sendMsg' size="default">发送</button>
+</view>
+
+
+</view>
+
+
+
+

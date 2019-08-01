@@ -1,0 +1,2 @@
+<!--pages/home/index.wxml-->
+<button bind:tap='gotochat'>进入聊天室</button>
