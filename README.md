@@ -1,5 +1,5 @@
-# wx_websoket
-node + websoket 实现多人聊天室<br/><br/>
+## node + WebSocket 实现多人聊天室
+
 ![https://github.com/fancaixia/wx_websoket/blob/master/pic/chat.png](https://github.com/fancaixia/wx_websoket/blob/master/pic/chat.png)
 <br/><br/>
 ### 案例思路： 
