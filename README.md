@@ -53,7 +53,7 @@ npm run dev <br/>
 
 ##### 小程序端模拟多人聊天
 copy static <br/>
-static / app.js  修改 UserId  创建多个用户进入聊天室
+***static / app.js  修改 UserId 然后进入聊天室(前台根据 UserId 判断发送消息人 )***
 
 
 ### 小程序代码片段:
