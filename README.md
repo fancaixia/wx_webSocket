@@ -26,15 +26,17 @@ node + websoket 实现多人聊天室<br/><br/>
 ***~~~存在问题  微信小程序中onSocketOpen 在真机上不触发回调~~~***
 
 ### 代码结构：
-***###服务端代码###***
+
+##### 服务端代码
 >server 
 >>node_modules &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 项目依赖文件 <br/>
 router  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   处理上传文件模块 <br/>
 upload   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  图片上传目录 <br/>
 utils    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  工具函数 <br/>
 app.js   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  node主文件 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-***###小程序端代码###***
+
+##### 小程序端代码
+
 > static
 >>utils &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 配置http及ws 地址 <br/>
 pages  <br/>
@@ -48,8 +50,8 @@ cd / server  <br/>
 cnpm install <br/>
 npm run dev <br/>
 
-- 小程序端
-satic / app.js  修改 UserId  创建多个用户进入聊天室模拟多人聊天
+##### 小程序端模拟多人聊天
+satic / app.js  修改 UserId  创建多个用户进入聊天室
 
 
 
