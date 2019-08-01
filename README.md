@@ -1,4 +1,5 @@
 ## node + WebSocket 多人聊天室
+[github:https://github.com/fancaixia/wx_webSocket](https://github.com/fancaixia/wx_webSocket)
 
 ![https://github.com/fancaixia/wx_websoket/blob/master/pic/chat.png](https://github.com/fancaixia/wx_websoket/blob/master/pic/chat.png)
 <br/><br/>
