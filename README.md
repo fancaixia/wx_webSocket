@@ -1,6 +1,6 @@
 # wx_websoket
 node + websoket 实现多人聊天室<br/><br/>
-![https://github.com/fancaixia/wx_websoket/blob/master/pic/001.png](https://github.com/fancaixia/wx_websoket/blob/master/pic/001.png)
+![https://github.com/fancaixia/wx_websoket/blob/master/pic/chat.png](https://github.com/fancaixia/wx_websoket/blob/master/pic/chat.png)
 <br/><br/>
 ### 案例思路： 
 [1] ***用户进入聊天室***  <br/>   
