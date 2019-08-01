@@ -51,7 +51,7 @@ cnpm install <br/>
 npm run dev <br/>
 
 ##### 小程序端模拟多人聊天
-copy static 
+copy static <br/>
 static / app.js  修改 UserId  创建多个用户进入聊天室
 
 
